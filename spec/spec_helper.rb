@@ -18,7 +18,6 @@
 
 require 'simplecov'
 require 'rspec/simplecov'
-require 'capybara/rails'
 SimpleCov.minimum_coverage 95
 SimpleCov.start
 RSpec::SimpleCov.start
