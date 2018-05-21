@@ -3,9 +3,13 @@
 
 CODE CHALLENGE WONDERSCHOOL
 
-- STEPS SETUP Configuration FOR CI
-- SETUP TEST TOOLS
+- STEPS SETUP Configuration FOR CI *
+- STEPS SETUP Configuration FOR CD
+- SETUP TEST TOOLS *
 - SORT DB STRUCTURE
+  * rails g model group group
+  * rails g model task group_id task dependencies completedAt
+  * rails g migration change_dependency_to_be_json_in_task
 - SORT OUT ROUTES
 - SORT VIEWS
 - IMPLEMENT WEBPACKER AND SETUP A REACT VIEW
