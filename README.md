@@ -10,6 +10,9 @@ CODE CHALLENGE WONDERSCHOOL
 - SORT VIEWS
 - IMPLEMENT WEBPACKER AND SETUP A REACT VIEW
 
+
+
+
 This README would normally document whatever steps are necessary to get the
 application up and running.
 
