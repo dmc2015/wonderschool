@@ -1,5 +1,15 @@
 # README
 
+
+CODE CHALLENGE WONDERSCHOOL
+
+- STEPS SETUP Configuration FOR CI
+- SETUP TEST TOOLS
+- SORT DB STRUCTURE
+- SORT OUT ROUTES
+- SORT VIEWS
+- IMPLEMENT WEBPACKER AND SETUP A REACT VIEW
+
 This README would normally document whatever steps are necessary to get the
 application up and running.
 
