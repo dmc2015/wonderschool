@@ -3,9 +3,13 @@
 
 CODE CHALLENGE WONDERSCHOOL
 
-- STEPS SETUP Configuration FOR CI
-- SETUP TEST TOOLS
+- STEPS SETUP Configuration FOR CI *
+- STEPS SETUP Configuration FOR CD
+- SETUP TEST TOOLS *
 - SORT DB STRUCTURE
+  * rails g model group id group
+  * rails g model task id group_id task dependencies completedAt
+
 - SORT OUT ROUTES
 - SORT VIEWS
 - IMPLEMENT WEBPACKER AND SETUP A REACT VIEW
