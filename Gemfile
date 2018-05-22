@@ -89,3 +89,6 @@ gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 
 # Gemfile
 gem 'webpacker', '~> 3.5'
+gem 'bootstrap'
+gem 'jquery-rails'
+gem 'gon'

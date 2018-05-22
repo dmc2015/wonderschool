@@ -7,4 +7,19 @@
 // To reference this file, add <%= javascript_pack_tag 'application' %> to the appropriate
 // layout file, like app/views/layouts/application.html.erb
 
-console.log('Hello World from Webpacker')
+// console.log('Hello World from Webpacker')
+
+
+
+let React = require("react");
+let ReactDom = require("react-dom");
+
+class Goals extends React.Component {
+  render() {
+    return (
+      <h1> heelo</h1>
+    )
+  }
+}
+
+module.exports = Goals;
