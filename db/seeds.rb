@@ -6,7 +6,7 @@
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
 
-10.times do |num|
+1.upto(10) do |num|
   group = Group.create(:group => "Group Number #{num}")
   Task.create({:group_id => group.id, :task => "walk dog", :dependencies => [1,3,5], :completedAt => nil})
 end

@@ -13,11 +13,17 @@
 
 let React = require("react");
 let ReactDom = require("react-dom");
+// let Goal = require("./Components/goal.js");
+
+let Goal = require("./Components/goal.js");
+let goal_data = gon
 
 class Goals extends React.Component {
   render() {
     return (
-      <h1> heelo</h1>
+      <div>
+        <Goal data={goal_data}/>
+      </div>
     )
   }
 }

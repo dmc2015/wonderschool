@@ -20,6 +20,7 @@ CODE CHALLENGE WONDERSCHOOL
   * decide where the assets should be placed
   * set up the loop/iteration to list the groups
   * set up the loop/iteration to list the tasks
+  * make a js function that can hit rails or a rails method that can be called from js
   * hide all the tasks by default
   * setup utilities module for handling click events on the main group items (rotate a caret ?)
   * setup utilities module for handling click events & the check for all complete subtasks of a group
