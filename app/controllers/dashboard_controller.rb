@@ -6,7 +6,6 @@ class DashboardController < ApplicationController
 
   def toggle_task
     respond_to :js, :json, :html
-    pp 'backend hit'
     task = Task.find(params['id'])
     Task.task_is_complete?(task) ?  Task.set_task_to_incomplete(task) : Task.set_task_to_complete(task)
 

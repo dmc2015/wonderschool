@@ -1,22 +1,23 @@
 require 'rails_helper'
 
+
 RSpec.describe Group, type: :model do
   describe Group do
 
     it 'is valid with valid attributes' do
-      expect(Group.new).to be_valid
+      group = create(:group, {:id => "1", :group => "My Group"})
+      expect(group).to be_valid
     end
 
-    let(:group) {create(:group, {group: nil})}
     it 'it is not valid without a group' do
-      expect(group).to_not be_valid
+      group = build(:group, {:group => nil})
+      expect(group).not_to be_valid
     end
 
-
-    # let(:group) {3.times.map {create(:group)}}
-    # it "3 groups should be created" do
-    #   expect(Group.all.count).to eq(3)
-    # end
+    it "3 groups should be created" do
+    3.times{ |index| group = create(:group, {:id => index, :group => index}) }
+      expect(Group.all.count).to eq(3)
+    end
 
   end
 end

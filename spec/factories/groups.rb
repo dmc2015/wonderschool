@@ -1,6 +1,6 @@
 FactoryBot.define do
   factory :group do
-    id "MyString"
+    id 1
     group "MyString"
   end
 end
