@@ -9,7 +9,7 @@ axios.defaults.headers.common = {
 class Task extends React.Component {
   constructor(props) {
     super(props);
-    // debugger;
+    debugger;
     //
 
     this.state = {
@@ -21,9 +21,14 @@ class Task extends React.Component {
     this.update_completed = this.update_completed.bind(this)
 };
 
+componentDidMount() {
+  this.update_completed(this.state.completedAt);
+}
+
+
   update_completed(completedAt) {
     this.setState({
-      completedAt: completedAt
+      completedAt: completedAt || 'Incomplete'
     })
   }
 
@@ -54,7 +59,7 @@ class Task extends React.Component {
   render() {
     let dependency_count = this.props.data.dependencies.length
     let task = this.props.data.task
-    let complete_date = this.props.data.completedAt || 'Incomplete'
+    // let complete_date = this.props.data.completedAt || 'Incomplete'
 
     return (
       <div className="tasks" onClick={this.toggleTask.bind(this)}>
@@ -66,7 +71,7 @@ class Task extends React.Component {
             Number of Dependencies: {dependency_count}
           </li>
           <li>
-            Completed At: {complete_date}
+            Completed At: {this.state.completedAt}
           </li>
         </ul>
       </div>
