@@ -4,6 +4,6 @@ FactoryBot.define do
     group_id "MyString"
     task "MyString"
     dependencies "MyString"
-    completedAt "MyString"
+    completedAt nil 
   end
 end
