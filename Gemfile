@@ -35,6 +35,7 @@ gem 'jbuilder', '~> 2.5'
 #env variables
 gem 'dotenv-rails'
 gem 'pg'
+gem 'eventmachine', '1.0.9.1'
 
 
 group :development, :test do
