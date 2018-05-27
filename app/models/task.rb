@@ -12,6 +12,4 @@ class Task < ApplicationRecord
   def self.set_task_to_complete(task)
     task.update(:completedAt => DateTime.now.strftime("%Y-%m-%d %r %z"))
   end
-
-
 end

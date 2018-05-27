@@ -2,6 +2,7 @@ require 'rails_helper'
 
 RSpec.describe Task, type: :model do
   describe Task do
+
     before(:each) do
       @group = create(:group, {:id => 1, :group => "My Group"})
       task_attr = {
@@ -16,9 +17,7 @@ RSpec.describe Task, type: :model do
       @task = create(:task, task_attr)
     end
 
-
-
-    it 'should be able to be created' do
+  it 'should be able to be created' do
       expect(@task).to be_valid
     end
 
@@ -28,24 +27,18 @@ RSpec.describe Task, type: :model do
 
     it 'should return completed true when a task is completed' do
       expect(Task.task_is_complete?(@task)).to be true
-
-      # Task.set_task_to_incomplete
-      # Task.set_task_to_complete
     end
+
     it 'should return true when task is incomplete' do
       task = create(:task, {:group_id => @group.id})
       expect(Task.task_is_complete?(task)).to be false
-      # Task.task_is_complete
-      # Task.set_task_to_incomplete
     end
-    it 'should change task to completed' do
 
+    it 'should change task to completed' do
       task = create(:task, {:group_id => @group.id})
       Task.set_task_to_complete(task)
-      expect(Task.task_is_complete?(@task)).to be true
-
+      expect(Task.task_is_complete?(task)).to be true
     end
-
 
   end
 end

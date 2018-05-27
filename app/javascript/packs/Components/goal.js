@@ -6,31 +6,13 @@ var Task = require("./task");
 class Goal extends React.Component {
   constructor(props) {
     super(props);
-    let group_data = props.data.all_groups;
-    // this.state = {
-    //   data: props
-    // };
-
-    // debugger;
-
-    // this.state = {
-    //   completedAt: this.props.data.completedAt || 'Incomplete'
-    //   // completedAt: this.props.data.completedAt || 'Incomplete'
-    // };
-
-    // this.update_completed = this.update_completed.bind(this)
-
   };
 
-  // update_completed(completedAt) {
-  //   this.setState({
-  //     completedAt: this.state.completedAt
-  //   }.bind(this))
-  // }
-
   render() {
+    debugger;
     return (
       <div className="goals">
+
       { this.props.data.all_groups.map(function(group){
 
         return(
