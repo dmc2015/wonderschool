@@ -16,6 +16,8 @@ let ReactDom = require("react-dom");
 // let Goal = require("./Components/goal.js");
 
 let Goal = require("./Components/goal.js");
+let TaskGroup = require("./Components/task_group.js");
+
 let goal_data = gon
 
 class App extends React.Component {
@@ -23,6 +25,7 @@ class App extends React.Component {
     return (
       <div>
         <Goal data={goal_data}/>
+        <TaskGroup />
       </div>
     )
   }

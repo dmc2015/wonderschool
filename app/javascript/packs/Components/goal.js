@@ -11,7 +11,7 @@ class Goal extends React.Component {
   render() {
     debugger;
     return (
-      <div className="goals">
+      <div className="goals col-xs-4 offset-xs-2">
 
       { this.props.data.all_groups.map(function(group){
 
