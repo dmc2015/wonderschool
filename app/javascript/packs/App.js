@@ -18,7 +18,7 @@ let ReactDom = require("react-dom");
 let Goal = require("./Components/goal.js");
 let goal_data = gon
 
-class Goals extends React.Component {
+class App extends React.Component {
   render() {
     return (
       <div>
@@ -28,4 +28,4 @@ class Goals extends React.Component {
   }
 }
 
-module.exports = Goals;
+module.exports = App;

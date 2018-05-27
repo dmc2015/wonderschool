@@ -1,7 +1,7 @@
 var React = require('react');
 var ReactDOM = require('react-dom');
-var Goals = require('./Goals');
+var App = require('./App');
 
 ReactDOM.render(
-  <Goals />, document.getElementById('root')
+  <App />, document.getElementById('root')
 );
