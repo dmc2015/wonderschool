@@ -11,7 +11,8 @@ class Goal extends React.Component {
   render() {
     debugger;
     return (
-      <div className="goals col-xs-4 offset-xs-2">
+      <div className="goals col-xs-4 mx-auto">
+      <h1>Things To Do</h1>
 
       { this.props.data.all_groups.map(function(group){
 

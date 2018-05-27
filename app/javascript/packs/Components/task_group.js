@@ -7,8 +7,8 @@ class TaskGroup extends React.Component {
 
   render() {
     return(
-      <div className="task-group">
-        <h2 className="col-xs-4 offset-xs-2">Task Group</h2>
+      <div className="task-group col-xs-4 mx-auto">
+        <h1>Task Group</h1>
         <ul>
           <li>
             <span className="icon"><img src={LockedImg}/></span>

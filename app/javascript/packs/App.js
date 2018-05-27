@@ -23,7 +23,7 @@ let goal_data = gon
 class App extends React.Component {
   render() {
     return (
-      <div>
+      <div className="row">
         <Goal data={goal_data}/>
         <TaskGroup />
       </div>
