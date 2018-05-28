@@ -15,17 +15,17 @@ let React = require("react");
 let ReactDom = require("react-dom");
 // let Goal = require("./Components/goal.js");
 
-let Goal = require("./Components/goal.js");
-let TaskGroup = require("./Components/task_group.js");
+let Group = require("./Components/group.js");
+let TaskLegend = require("./Components/task_legend.js");
 
-let goal_data = gon
+let group_data = gon
 
 class App extends React.Component {
   render() {
     return (
       <div className="row">
-        <Goal data={goal_data}/>
-        <TaskGroup />
+        <Group data={group_data}/>
+        <TaskLegend />
       </div>
     )
   }

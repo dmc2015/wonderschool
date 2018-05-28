@@ -13,7 +13,7 @@ gem 'rails', '~> 5.1.6'
 # Use Puma as the app server
 gem 'puma', '~> 3.7'
 # Use SCSS for stylesheets
-gem 'sass-rails', '~> 5.0'
+# gem 'sass-rails', '~> 5.0'
 # Use Uglifier as compressor for JavaScript assets
 gem 'uglifier', '>= 1.3.0'
 # See https://github.com/rails/execjs#readme for more supported runtimes
@@ -91,7 +91,10 @@ gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 
 # Gemfile
 gem 'webpacker', '~> 3.5'
-gem 'bootstrap', '~> 4.1.1'
+# gem 'bootstrap', '~> 4.1.1'
 gem 'sprockets'
 gem 'jquery-rails'
 gem 'gon'
+
+gem 'bootstrap-sass', '~> 3.3.7'
+gem 'sass-rails', '>= 3.2'

@@ -1,0 +1,87 @@
+li {
+  list-style-type: none;
+}
+
+.task-group li {
+  border-bottom: 0.01em solid #ccc;
+  width: 100%;
+  margin-bottom: 5px;
+}
+
+.task-status {
+  font-size: 10px;
+  letter-spacing: 1px;
+}
+
+.list-lock span{
+  color: #ccc;
+}
+
+.list-completed span {
+  text-decoration: line-through;
+}
+
+.headings {
+  font-size: 15px;
+  white-space: nowrap;
+  width: 100%;
+  font-weight: 400;
+  margin-bottom: 5px;
+  letter-spacing: .06em;
+  word-spacing: 0.06em;
+  display: inline;
+  padding-left: 0px;
+  padding-right: 0px;
+}
+
+.header-container a {
+  font-size: 10px;
+  padding-left: 0px;
+  padding-right: 0px;
+  margin-left: 0px;
+  margin-right: 0px;
+  white-space: nowrap;
+}
+
+
+/* border-bottom: 0.01em solid #ccc;
+width: 100%; */
+
+.header-container {
+  border-bottom: 0.01em solid #ccc;
+  width: 100%;
+  margin-bottom: 5px;
+  padding-bottom: 25px;
+  margin-top: 20px;
+}
+
+.header-container .all-groups {
+  color: blue;
+  font-size: 7px;
+  letter-spacing: .1em;
+  font-weight: 400;
+}
+
+.group-name {
+  font-size: 10px;
+  border-bottom: 0.01em solid #ccc;
+width: 100%;
+margin-bottom: 5px;
+padding: 20px 0px;
+
+
+}
+
+.tasks {
+  font-size: 12px;
+  font-weight: 200;
+  white-space: nowrap;
+}
+
+.inline {
+  display: inline;
+}
+
+.display-none {
+  display: none;
+}
