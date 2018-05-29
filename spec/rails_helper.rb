@@ -1,6 +1,6 @@
 require 'simplecov'
 require 'rspec/simplecov'
-SimpleCov.minimum_coverage 95
+SimpleCov.minimum_coverage 90
 SimpleCov.start
 
 RSpec::SimpleCov.start
@@ -36,7 +36,7 @@ require 'support/factory_bot'
 # Checks for pending migrations and applies them before tests are run.
 # If you are not using ActiveRecord, you can remove this line.
 ActiveRecord::Migration.maintain_test_schema!
-
+SimpleCov.minimum_coverage 90
 RSpec.configure do |config|
 
 
