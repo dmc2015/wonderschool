@@ -13,4 +13,13 @@ class Group < ApplicationRecord
   def self.all_group_data
     @all_groups = Group.all
   end
+
+  def self.completed_tasks_count(id)
+    Group.find(id).tasks.where.not(:completedAt => nil).count
+  end
+
+  def self.total_tasks_count(id)
+    Group.find(id).tasks.count
+  end
+
 end

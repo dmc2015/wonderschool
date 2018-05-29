@@ -13,3 +13,8 @@
  *= require_tree .
  *= require_self
  */
+
+ // Custom bootstrap variables must be set or imported *before* bootstrap.
+ // "bootstrap-sprockets" must be imported before "bootstrap" and "bootstrap/variables"
+ @import "bootstrap-sprockets";
+ @import "bootstrap";

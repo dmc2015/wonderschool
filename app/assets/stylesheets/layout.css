@@ -1,0 +1,24 @@
+span.icon {
+  margin-right: 3vw;
+  margin-bottom: 17px;
+  margin-top: 17px;
+  display: inline-block;
+}
+
+
+.ul-legend {
+  padding-left: 0px;
+}
+
+.goals, .task-group {
+  width: 45%;
+}
+
+.block {
+  display: block;
+}
+
+
+.task-count-margin {
+  margin: 0 13%;
+}

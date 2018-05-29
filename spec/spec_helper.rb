@@ -18,7 +18,7 @@
 
 require 'simplecov'
 require 'rspec/simplecov'
-SimpleCov.minimum_coverage 95
+SimpleCov.minimum_coverage 90
 SimpleCov.start
 RSpec::SimpleCov.start
 
@@ -55,7 +55,7 @@ RSpec.configure do |config|
   # inherited by the metadata hash of host groups and examples, rather than
   # triggering implicit auto-inclusion in groups with matching metadata.
   config.shared_context_metadata_behavior = :apply_to_host_groups
-  
+
 
   #for database cleaning
   config.before(:suite) do
